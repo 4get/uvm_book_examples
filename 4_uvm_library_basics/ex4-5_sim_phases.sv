@@ -47,6 +47,7 @@ class simple_if_comp extends uvm_component;
   // UVM build_phase() method
   function void build_phase(uvm_phase phase);
     super.build_phase(phase);
+   `uvm_info("UVC", "build_phase: Executing.", UVM_LOW)
     master = master_comp::type_id::create("master", this);
     slave  = slave_comp::type_id::create("slave", this);
   endfunction : build_phase

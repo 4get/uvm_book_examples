@@ -71,7 +71,8 @@ interface_comp my_uvc;
 initial begin
 // Configure BEFORE create
   uvm_config_string::set(null, "my_uvc", "if_name", "APB_UVC");
-  uvm_config_int::set(null, "my_uvc", "num_slaves", 2);
+  uvm_config_int::set(null, "my_uvc", "num_masters", 2);
+  uvm_config_int::set(null, "my_uvc", "num_slaves", 4);
 // Create components
   my_uvc = interface_comp::type_id::create("my_uvc", null);
 // Start UVM Phases

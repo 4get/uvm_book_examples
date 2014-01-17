@@ -13,7 +13,8 @@ class stack #(type T = int);
   function new(); stacks++; id = stacks; endfunction 
 endclass
 
-stack int_stack = new();             // id: 1
+stack int_stack_pre = new();             // id: 1
+stack int_stack = new();             // id: 2
 stack #(bit[9:0]) bit_stack = new(); // id: 1
 stack #(real) real_stack = new();    // id: 1
 

@@ -31,8 +31,8 @@ endclass : slave_comp
 class interface_comp extends uvm_component;
   master_comp master[];  // dynamic array of masters
   slave_comp  slave[];   // dynamic array of slaves
-  int num_masters = 1;
-  int num_slaves = 1;
+  int num_masters = 3;
+  int num_slaves = 5;
   string if_name = "bus_uvc";
 
   `uvm_component_utils_begin(interface_comp)
