@@ -13,3 +13,4 @@
     child_producer_inst.put_port.connect(put_port);
 ./4_uvm_library_basics/ex4-12_tlm_export_connect.sv
     put_export.connect(child_consumer_inst.put_export);
+./4_uvm_library_basics/ex4-16_decl_macros.sv
