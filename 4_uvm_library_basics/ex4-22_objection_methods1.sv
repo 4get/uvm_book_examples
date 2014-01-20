@@ -7,7 +7,7 @@
 OPTIONALLY - run with +UVM_OBJECTION_TRACE to get all the trace 
   information for the objections
 **********************************************************************/
-`timescale 1ns/1ns
+//`timescale 1ns/1ns
 package my_pkg;
 import uvm_pkg::*;
 `include "uvm_macros.svh"
